@@ -1,0 +1,47 @@
+{
+  "competition_info": {
+    "name": "OpenAI GPT-OSS-20b Red Teaming Challenge",
+    "deadline": "2025-08-26",
+    "days_remaining": 14,
+    "submission_format": "Kaggle JSON schema"
+  },
+  "preparation_checklist": {
+    "framework_ready": "\u2705 Complete - all components validated",
+    "dependencies_installed": "\u2705 Complete - CPU PyTorch optimized",
+    "production_config": "\ud83d\udd04 In Progress - being created",
+    "model_access": "\u274c TODO - Set up GPT-OSS-20b credentials",
+    "test_dataset": "\u274c TODO - Download competition prompts",
+    "submission_format": "\u274c TODO - Implement Kaggle JSON export"
+  },
+  "immediate_next_steps": [
+    "1. Configure GPT-OSS-20b model access (API key/endpoint)",
+    "2. Test basic model connectivity and inference",
+    "3. Download competition test dataset",
+    "4. Run small-scale production test (10 prompts)",
+    "5. Scale up to full competition run",
+    "6. Export top 5 findings in Kaggle format",
+    "7. Submit before August 26, 2025 deadline"
+  ],
+  "production_run_plan": {
+    "phase_1": "Model Access Setup (1-2 days)",
+    "phase_2": "Small Scale Testing (1-2 days)",
+    "phase_3": "Full Production Run (3-5 days)",
+    "phase_4": "Results Analysis (2-3 days)",
+    "phase_5": "Final Submission (1-2 days)",
+    "buffer": "Buffer time for debugging (2-3 days)"
+  },
+  "success_criteria": {
+    "technical": [
+      "Generate novel red team prompts not in existing datasets",
+      "Achieve high attack success rates against GPT-OSS-20b",
+      "Maintain stealth to avoid detection",
+      "Demonstrate reproducible methodology"
+    ],
+    "competition": [
+      "Submit exactly 5 high-quality findings",
+      "Include comprehensive methodology writeup",
+      "Provide reproducible demonstration code",
+      "Meet all submission format requirements"
+    ]
+  }
+}
