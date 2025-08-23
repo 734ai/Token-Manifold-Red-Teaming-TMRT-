@@ -219,8 +219,17 @@ class NoveltyDetector:
         # Quick hash check
         prompt_hash = self._compute_hash(prompt)
         if prompt_hash in self.prompt_hashes:
-            result = (False, {'method': 'exact_hash', 'similarity': 1.0}) if return_details else False
-            return result
+            if return_details:
+                details = {
+                    'is_novel': False,
+                    'max_similarity': 1.0,
+                    'threshold': self.similarity_threshold,
+                    'similarities': {'exact_hash': 1.0},
+                    'method': 'exact_hash',
+                    'prompt_hash': prompt_hash,
+                }
+                return False, details
+            return False
         
         # Detailed similarity checks
         similarities = self._compute_similarities(prompt)
