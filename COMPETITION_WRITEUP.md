@@ -169,6 +169,14 @@ The TMRT framework advances AI safety through rigorous, responsible vulnerabilit
 
 ---
 
+## 📝 **Acknowledgments**
+
+We extend our gratitude to the OpenAI GPT-OSS-20b Challenge organizers for providing this opportunity to advance AI safety research. Special thanks to the TMRT development team for their dedication and innovation.
+
+---
+
 **🏆 Competition Status**: Ready for submission with leading-edge research impact
 **🔬 Research Value**: Multiple publication-ready contributions to AI safety
 **⚡ Technical Excellence**: 100% validation across all submission criteria
+
+
