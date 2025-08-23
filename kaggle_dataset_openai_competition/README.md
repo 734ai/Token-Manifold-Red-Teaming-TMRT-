@@ -26,3 +26,24 @@ Notes
 
 Contact
 - See repository root for the full TMRT source and submission package.
+
+Model integration (GPT-OSS-20B)
+--------------------------------
+If you want the notebook to run against the real GPT-OSS-20B model, provide either:
+
+- A local path to the model files (recommended when you have the weights locally). Set environment variable:
+
+```bash
+export GPT_OSS_LOCAL_PATH=/absolute/path/to/gpt-oss-20b
+```
+
+- Or a Hugging Face repo id and an access token (for private/gated repos):
+
+```bash
+export GPT_OSS_HF_ID=owner/repo-or-model-id
+export HF_HUB_TOKEN=<your_hf_token>
+```
+
+Notes:
+- The model is large and requires significant disk space and RAM. Ensure your environment has sufficient resources before attempting to load it.
+- The notebook will prefer `GPT_OSS_LOCAL_PATH` if present; otherwise it will use the HF repo id and token if both `GPT_OSS_HF_ID` and `HF_HUB_TOKEN` are provided.
